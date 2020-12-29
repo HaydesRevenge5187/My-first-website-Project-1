@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Fitness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Redressed&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        /* CSS Reset */
+
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/abs-1850926_1920.jpg');
+        }
+
+        /* upper left body structure */
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            /* positioning */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100)
+        }
+
+        .left div {
+            font-size: 26px;
+            text-align: center;
+            font-family: 'Audiowide', cursive;
+        }
+
+        /* upper mid body structure */
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            font-family: 'Yellowtail', cursive;
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            font-family: 'Redressed', cursive;
+            color: white;
+            text-decoration: none;
+            padding: 34px 11px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        /* upper right body structure */
+        .right {
+            display: inline-block;
+            /* border: 2px solid blue; */
+            /* positioning */
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .btn {
+            font-family: 'Yellowtail', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 5px 11px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+        /* the below part  */
+        .container1 {
+            border: 2px solid rgb(255, 255, 255);
+            margin: 106px 80px;
+            padding: 75px;
+            width: 30%;
+            border-radius: 28px;
+            ;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 223px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 10px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container1 h1{
+            text-align: center;
+        }
+        .container1 button{
+            display: block;
+            width: 23%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/silhouette-1975689_1280.png" alt="logo.png">
+            <div>HayDes Fitness</div>
+        </div>
+        <!-- Mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container1">
+        <h1>Join this best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+               <input type="text" name="Enter Your Gender" id="">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
